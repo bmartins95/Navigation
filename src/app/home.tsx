@@ -2,12 +2,13 @@ import { View } from "react-native";
 
 import { StackRouteProps } from "@/routes/stack-routes";
 import { BottonTabRouteProps } from "@/routes/bottom-routes";
+import { DrawerRouteProps } from "@/routes/drawer-routes";
 
 import { ButtonIcon } from "@/components/button-icon";
 import { Header } from "@/components/header";
 import { Title } from "@/components/title";
 
-export function Home({ navigation }: BottonTabRouteProps<"home">) {
+export function Home({ navigation }: DrawerRouteProps<"home">) {
 
     return (
         <View style={{ flex: 1, padding: 32 }}>
