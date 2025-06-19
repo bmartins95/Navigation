@@ -6,7 +6,7 @@ import { Product } from "@/app/product"
 
 export type StackRoutesList = {
     home: undefined
-    product: undefined
+    product: undefined | { id: string }
 }
 
 export type StackRouteProps<T extends keyof StackRoutesList> = NativeStackScreenProps<StackRoutesList, T>
