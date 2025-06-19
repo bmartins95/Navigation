@@ -1,15 +1,12 @@
 import { View } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
-import { StackRoutesList } from "@/routes/stack-routes";
+import { StackRouteProps } from "@/routes/stack-routes";
 
 import { ButtonIcon } from "@/components/button-icon";
 import { Header } from "@/components/header";
 import { Title } from "@/components/title";
 
-type Props = NativeStackScreenProps<StackRoutesList, "product">
-
-export function Product({ navigation }: Props) {
+export function Product({ navigation }: StackRouteProps<"product">) {
 
     return (
         <View style={{ flex: 1, padding: 32 }}>
