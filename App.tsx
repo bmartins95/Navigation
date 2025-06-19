@@ -1,5 +1,5 @@
-import { Home } from "@/app/home";
+import { Routes } from "@/routes";
 
 export default function App() {
-  return <Home></Home>
+  return <Routes></Routes>
 }
